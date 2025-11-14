@@ -1,0 +1,24 @@
+name: Minecraft AFK Bot
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodlar indiriliyor
+        uses: actions/checkout@v3
+
+      - name: Node kurulumu
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Gerekli modüller yükleniyor
+        run: npm install
+
+      - name: Bot çalıştırılıyor
+        run: node bot.js
