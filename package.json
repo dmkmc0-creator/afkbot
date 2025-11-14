@@ -1,0 +1,12 @@
+{
+  "name": "github-minecraft-afk-bot",
+  "version": "1.0.0",
+  "description": "GitHub Actions üzerinden çalışan Minecraft AFK botu",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.16.0"
+  }
+}
